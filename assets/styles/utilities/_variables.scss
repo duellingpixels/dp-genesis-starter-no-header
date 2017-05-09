@@ -1,0 +1,31 @@
+/* # Variables
+-----------------------------------------------------------------------*/
+
+/* ### Colors */
+
+$color-text: #000;
+$color-accent: #333;
+$color-border: #d3d3d3;
+$color-white: #fff;
+
+
+/* ### Typography */
+
+$font-heading: Muli, Helvetica, sans-serif;
+$font-body: Muli, Helvetica, sans-serif;
+$font-size-heading: 20px;
+$font-size-body: 15px;
+$font-weight-bold: 600;
+$font-weight-normal: 400;
+$line-height-heading: 1.382;
+$line-height-body: 1.618;
+
+/* ### Breakpoints */
+
+$breakpoints: (
+	xs: 600px,
+	sm: 860px,
+	md: 1023px,
+	lg: 1200px,
+	xl: 1340px
+);

@@ -1,0 +1,50 @@
+/* ## Pagination
+--------------------------------------------- */
+
+.pagination {
+	clear: both;
+	margin: 10% auto 0;
+}
+
+.adjacent-entry-pagination {
+	margin-bottom: 0;
+}
+
+.archive-pagination {
+
+	li {
+		display: inline;
+	}
+
+	a {
+		color: $color-text;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 16px;
+		font-size: 1.6rem;
+		padding: 8px 12px;
+		text-decoration: none;
+		background-color: $color-white;
+		border: 1px solid $color-accent;
+	}
+
+	li a {
+		margin-bottom: 4px;
+
+		@include breakpoint(sm) {
+			margin-bottom: 0;
+		}
+	}
+
+	a:hover,
+	a:focus {
+		background-color: $color-white;
+		color: $color-accent;
+		box-shadow: 1px 1px 18px #b3b3b3;
+	}
+	.active a {
+		background-color: $color-white;
+		color: $color-accent;
+		
+	}
+}

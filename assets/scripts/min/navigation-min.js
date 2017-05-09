@@ -1,0 +1,1 @@
+!function(){jQuery(window).load(function(){jQuery(".storefront-handheld-footer-bar .search > a").click(function(e){jQuery(this).parent().toggleClass("active"),e.preventDefault()})})}();

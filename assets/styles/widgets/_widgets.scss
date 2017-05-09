@@ -1,0 +1,104 @@
+
+/* Flexible Widgets
+--------------------------------------------- */
+
+.flexible-widgets .widget {
+	float: left;
+	margin-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.flexible-widgets.widget-full .widget,
+.flexible-widgets.widget-area .widget:nth-of-type(1),
+.flexible-widgets.widget-halves.uneven .widget:last-of-type {
+	width: 100%;
+}
+
+.flexible-widgets.widget-fourths .widget {
+	width: 25%;
+}
+
+.flexible-widgets.widget-halves .widget {
+	width: 50%;
+}
+
+.flexible-widgets.widget-thirds .widget {
+	width: 33.33%;
+}
+
+.flexible-widgets.widget-halves .widget:nth-child(even),
+.flexible-widgets.widget-thirds .widget:nth-child(3n+2),
+.flexible-widgets.widget-fourths .widget:nth-child(4n+2) {
+	clear: left;
+}
+
+
+/* ## Widgets
+--------------------------------------------- */
+
+.widget {
+	margin-bottom: 10%;
+	word-wrap: break-word;
+
+	@include breakpoint(sm) {
+		margin-bottom: 0;
+	}
+
+	.sidebar & {
+		margin-bottom: 10%;
+	}
+
+	p:last-child,
+	ul > li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	ul > li {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+
+	ul > li:last-of-type {
+		padding-bottom: 0;
+	}
+
+	ol > li {
+		list-style-position: inside;
+		list-style-type: decimal;
+		padding-left: 20px;
+		text-indent: -20px;
+	}
+
+	li li {
+		border: 0;
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.widget-title {
+	display: inline-block;
+	margin-bottom: 1em;
+	font-size: $font-size-heading;
+
+	@include breakpoint(sm) {
+		font-size: $font-size-heading * 1.1;
+	}
+}
+
+.widget_calendar {
+
+	table {
+		width: 100%;
+	}
+
+	td,
+	th {
+		text-align: center;
+	}
+}
